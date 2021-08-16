@@ -1,0 +1,50 @@
+.App {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.App-header-thumnail {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  height: 20px;
+  width: 100%;
+}
+
+.App-header-title {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.App-container {
+  color: #2d3436dc;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 700px;
+  max-height: 600px;
+  margin: 30px auto;
+  padding: 15px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.45);
+}
+
+.App-error-message {
+  color: rgba(255, 0, 0, 0.562);
+}
+
+.App-loader {
+  margin: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .App-container {
+    box-shadow: none;
+    max-width: 100%;
+    max-height: unset;
+    height: calc(100vh - 64px);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

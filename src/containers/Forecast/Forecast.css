@@ -1,0 +1,80 @@
+.Forecast-title {
+  position: relative;
+}
+
+.Forecast-title::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -0.67em;
+}
+
+.Forecast-item-date {
+  font-weight: 700;
+}
+
+.Forecast-item {
+  flex: 1 1 20%;
+  max-width: 20%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.Forecast-item-temperature {
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .Forecast {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Forecast > .row {
+    overflow: hidden auto;
+    flex: 1;
+    flex-basis: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .Forecast-item {
+    flex: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .Forecast-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Forecast-item-date,
+  .Forecast-item-icon {
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .Forecast-item-date {
+    text-align: left;
+  }
+
+  .Forecast-item-temperature {
+    display: flex;
+  }
+
+  .Forecast-item-temperature > li {
+    padding: 0 5px;
+  }
+}
