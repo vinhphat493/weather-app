@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Weather Forecast for 5 dáy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple application to display 5-day weather forecast using the OpenWeatherMap API. Built on top of my recently created.
 
-## Available Scripts
+![Home page](https://github.com/vinhphat493/weather-app/blob/main/public/Screenshot.png)
 
-In the project directory, you can run:
+## Getting started
 
-### `yarn start`
+- Sign up over at [openweathermap.org](https://openweathermap.org/appid) to get an API key.
+- Fork the project and clone it locally.
+- Create a file at the root of the project called `.env.local` with the following contents:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+REACT_APP_API_URL = 'https://api.openweathermap.org/data/2.5'
+REACT_APP_API_KEY = The API key you obtained from openweathermap.org, you also can use my API key "2707b1362294a33ba9860205af1befa5"
+REACT_APP_ICON_URL = 'https://openweathermap.org/img/w'
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
 
-### `yarn test`
+## Run
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone
+cd weather-app
+yarn or npm i
+```
 
-### `yarn build`
+## Start the server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm run start or yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm run build or yarn build
+```
 
-### `yarn eject`
+#### Notes:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Running the build bundles all your updates to `bundle.js` and `bundle.css` in dist folder.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Test
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm run test or yarn test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Notes:
 
-## Learn More
+- Unit testing can be done manually by executing the above command.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### TODOs
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [x] Provide an option for user to choose location of their choice by Name,
+- [x] Unit testing
+- [x] Use a proper loading spinner icon on page load
+- [x] Detect location automatically
+- [x] Display 5-day weather forecast.
 
-### Code Splitting
+### Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React.js
+- Redux, Redux thunk
+- JavaScript (ES6)
+- HTML5
+- CSS
+- Jest + Enzyme
