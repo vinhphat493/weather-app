@@ -1,6 +1,6 @@
-# Weather Forecast for 5 dáy
+# Weather Forecast for 5 days
 
-A simple application to display 5-day weather forecast using the OpenWeatherMap API. Built on top of my recently created.
+A simple application to display 5-day weather forecast using the OpenWeatherMap API.
 
 ![Home page](https://github.com/vinhphat493/weather-app/blob/main/public/Screenshot.png)
 
