@@ -24,4 +24,24 @@ describe('Forecast', () => {
 
     expect(wrapper.find('.row').children().length).toBe(5);
   });
+
+  it('should render empty forecast tile when fetchweather failed', () => {
+    const wrapper = render(
+      <Provider store={mockStore({ weather: { data: {} } })}>
+        <Forecast />
+      </Provider>
+    );
+
+    expect(wrapper.find('.row').children().length).toBe(0);
+  });
+
+  it('should render empty title forcast when fetchweather failed', () => {
+    const wrapper = render(
+      <Provider store={mockStore({ weather: { data: {} } })}>
+        <Forecast />
+      </Provider>
+    );
+
+    expect(wrapper.find('.Forecast-location-error').length).toBe(1);
+  });
 });

@@ -20,7 +20,6 @@ REACT_APP_ICON_URL = 'https://openweathermap.org/img/w'
 ## Run
 
 ```
-git clone
 cd weather-app
 yarn or npm i
 ```

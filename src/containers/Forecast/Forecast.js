@@ -34,7 +34,11 @@ const Forecast = () => {
     if (status === 'success') {
       return <h1>{`${cityName}, ${country}`}</h1>;
     }
-    return null;
+    return (
+      <h3 className="Forecast-location-error">
+        Please enter your location to find the forecast weather!
+      </h3>
+    );
   }, [cityName, country, status]);
 
   return (
