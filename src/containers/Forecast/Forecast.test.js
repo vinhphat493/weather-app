@@ -25,7 +25,7 @@ describe('Forecast', () => {
     expect(wrapper.find('.row').children().length).toBe(5);
   });
 
-  it('should render empty forecast tile when fetchweather failed', () => {
+  it('should show forcast location error when call fetchweather failed', () => {
     const wrapper = render(
       <Provider store={mockStore({ weather: { data: {} } })}>
         <Forecast />
